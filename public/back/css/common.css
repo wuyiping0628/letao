@@ -13,7 +13,9 @@ a:hover,
 a:active {
   text-decoration: none;
 }
-
+.red {
+  color: #A94442;
+}
 
 
 
@@ -37,6 +39,10 @@ a:active {
   left: 0;
   background-color: #222D32;
   z-index: 999 ;
+  transition: all 1s;
+}
+.lt_aside.hidemenu{
+  left:-180px;
 }
 .lt_aside .brand{
   text-align: center;
@@ -93,6 +99,10 @@ a:active {
   height: 1000px;
   padding-left: 180px;
   padding-top: 50px;
+  transition: all 1s;
+}
+.lt_main.hidemenu {
+  padding-left: 0px;
 }
 .lt_main .lt_topbar{
   height: 50px;
@@ -103,6 +113,10 @@ a:active {
   background-color: #3C8DBC;
   padding-left: 180px;
   z-index: 666;
+  transition: all 1s;
+}
+.lt_topbar.hidemenu {
+  padding-left: 0px;
 }
 .lt_main .lt_topbar .icon_menu,
 .lt_main .lt_topbar .icon_logout{
@@ -113,3 +127,15 @@ a:active {
   color: #fff;
 font-size: 16px;
 }
+
+.lt_main .lt_content{
+  padding: 15px;
+}
+.lt_main .lt_content .echarts_left,
+.lt_main .lt_content .echarts_right{
+  width: 48%;
+  height: 400px;
+  background-color: skyblue;
+}
+
+
