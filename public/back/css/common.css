@@ -1,3 +1,22 @@
+img{
+  display: block;
+  width: 100%;
+}
+ul{
+ margin: 0;
+ padding: 0;
+ list-style: none 
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+
+
+
 .body_bg{
   background-color: #222d32;
 }
@@ -9,4 +28,88 @@
 }
 .mt{
   margin-top: 150px;
+}
+.lt_aside{
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222D32;
+  z-index: 999 ;
+}
+.lt_aside .brand{
+  text-align: center;
+  height: 50px;
+  background-color: #367FA9;
+}
+.lt_aside .brand a{
+  display: block;
+  color: #fff;
+  font-size: 23px;
+  line-height: 50px;
+  text-decoration: none;
+
+}
+.lt_aside  .user{
+  height: 180px;
+  padding-top: 30px;
+}
+.lt_aside .user img{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.lt_aside .user p{
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+.lt_aside  .nav li a{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.lt_aside  .nav li a.active{
+  background-color: #1D1F21;
+  border-left: 3px solid #069
+}
+.lt_aside  .nav li a i{
+  padding-left: 4px;
+}
+.lt_aside  .nav  .child{
+  display: none;
+} 
+.lt_aside  .nav  .child a {
+  padding-left: 60px;
+}
+.lt_main{
+  height: 1000px;
+  padding-left: 180px;
+  padding-top: 50px;
+}
+.lt_main .lt_topbar{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #3C8DBC;
+  padding-left: 180px;
+  z-index: 666;
+}
+.lt_main .lt_topbar .icon_menu,
+.lt_main .lt_topbar .icon_logout{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+font-size: 16px;
 }

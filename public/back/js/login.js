@@ -25,7 +25,7 @@ $(function(){
         //   message:'用户名由数据字母下划线和.组成'
         // }
         callback: {
-          message: "密码错误"
+          message: "用户名不存在"
         }
       }
     },
@@ -59,20 +59,21 @@ $(function(){
       success:function(info){
         console.log(info);
         if(info.success){
-          location.herf ="index.html";
+          // alert(1)
+          location.href = "index.html";
         }
         if (info.error === 1000){
           $("#form").data("bootstrapValidator").updateStatus( "username", "INVALID", "callback")
         }
-        if (info ===1001){
-          $("#form").data("bootstrapValidator").updateStatus( "username", "INVALID", "callback")
+        if (info.error ===1001){
+          $("#form").data("bootstrapValidator").updateStatus( "password", "INVALID", "callback")
         }
       }
     })
   })
 
-  $('[typr="reset"]').click(function(){
-    $('#form').data("bootstrapValidator").resetForm(true);
+  $('[type="reset"]').click(function(){
+    $('#form').data("bootstrapValidator").resetForm();
   })
 
                    
