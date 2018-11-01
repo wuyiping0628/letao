@@ -5,10 +5,14 @@ $(document).ajaxStart(function () {
 
 
 $(document).ajaxStop(function () {
-  NProgress.done();
+  setTimeout(function(){
+    NProgress.done();
+  },500);
 });
 
 
+
+$(function(){
 // 1 二级导航隐藏设置
 $('.lt_aside .nav .category').click(function() {
   $(this).next().stop().slideToggle();
@@ -40,3 +44,5 @@ $('#logoutBtn').click(function(){
     }
   })
 })
+})
+

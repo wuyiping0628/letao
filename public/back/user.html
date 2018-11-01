@@ -81,14 +81,39 @@
             </tr>
           </thead>
           <tbody>
-    
           </tbody>
         </table>
+
+        <!-- 分页插件 -->
+        <div class="text-right">
+        <ul id="paginator"></ul>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- 模态框 -->
+  <!-- 启用禁用模态框 -->
+  <div id="userModal" class="modal fade" tabindex="-1" >
+    <div class="modal-dialog modal-sm" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">温馨提示</h4>
+        </div>
+        <div class="modal-body">
+
+          <p class="red"><i class="glyphicon glyphicon-info-sign"></i>你确定要执行此操作吗？</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="submit">确定</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <!-- 退出系统模态框 -->
   <div id="logoutModal" class="modal fade" tabindex="-1" >
     <div class="modal-dialog modal-sm" >
       <div class="modal-content">
@@ -115,7 +140,7 @@
         <td>{{v.username}}</td>
         <td>{{v.mobile}}</td>
         <td>{{ v.isDelete===1?"正常":"已禁用"}}</td>
-        <td>
+        <td data-id="{{v.id}}">
           {{if v.isDelete===1}}
           <button class="btn btn-danger" >禁用</button>
           {{else}}
@@ -132,8 +157,9 @@
   <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
   <script src="./lib/nprogress/nprogress.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
-  <script src="./js/checklogin.js"></script>
+  <script src="./lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/checklogin.js"></script>
   <script src="./js/user.js"></script>
 </body>
 </html>
