@@ -16,6 +16,9 @@ a:active {
 .red {
   color: #A94442;
 }
+.mb_20{
+  margin-bottom: 20px;
+}
 .table.table-bordered th,
 .table.table-bordered td {
   text-align: center;
