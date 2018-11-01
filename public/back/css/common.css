@@ -145,5 +145,14 @@ font-size: 16px;
   height: 400px;
   background-color: skyblue;
 }
+.lt_content tbody img{
+  height: 50px;
+  width: auto;
+  margin: 0 auto;
+}
+#secondModal img{
+  width: auto;
+  height: 100px;
+}
 
 
