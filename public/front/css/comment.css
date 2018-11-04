@@ -17,7 +17,7 @@ img{
 .lt_container{
   width: 100%;
   height: 100%;
-  background-color: pink;
+  background-color: #fff;
   min-width: 320px;
   max-width: 640px;
   margin: 0 auto;
@@ -66,7 +66,6 @@ img{
 .lt_main{
   width: 100%;
   height: 100%; 
-  background-color: skyblue;
   position: relative;
 }
 
@@ -82,6 +81,7 @@ img{
   left: 0;
   bottom: 0;
   background-color: #006699;
+  z-index: 2;
 }
 .lt_footer li{
   float: left;
@@ -103,4 +103,35 @@ img{
 }
 .lt_footer li a.current p{
   color: orange;
+}
+.lt_product{
+  padding: 10px;
+}
+.lt_product li{
+  width: 48%;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* margin-left: 10px; */
+
+}
+.lt_product li:nth-child(2n){
+  float: right;
+}
+.lt_product li a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.lt_product li img{
+  height: 130px;
+  width: 130px;
+  margin: 0 auto;
+}
+.lt_product li .lt_product_left{
+  color: red;
+}
+.lt_product li .lt_product_right{
+  text-decoration: line-through;
 }
